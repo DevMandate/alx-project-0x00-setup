@@ -1,8 +1,10 @@
 import Image from "next/image"
-import HOUSE_IMAGE from "@/public/assets/house.png"
-import STAR_IMAGE from "@/public/assets/star.png"
 import React from "react"
 import Pill from "./Pill"
+
+// ✅ Direct URLs to files in the public folder
+const HOUSE_IMAGE = "/images/house.png";
+const STAR_IMAGE = "/images/star.png";
 
 
 const Card: React.FC = () => {
@@ -21,7 +23,7 @@ const Card: React.FC = () => {
           <p className=" font-medium text=[17px] text-[#929292]">Sideman, Bali, Indonesia</p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
+          <Image src={STAR_IMAGE} alt="star" width={20} height={20} />
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>
       </div>
